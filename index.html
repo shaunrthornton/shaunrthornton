@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaun Thornton - Enterprise Programme Delivery &amp; Business Operations Leader</title>
+<meta name="description" content="Shaun Thornton - Senior Business Operations, PMO and Programme Delivery leader in Munich. 20+ years of association with McKinsey &amp; Company in executive operations, governance and programme delivery at scale.">
+<style>
+  :root {
+    --bg: #0b0c0f;
+    --bg-lift: #101319;
+    --card: #131720;
+    --line: rgba(255, 255, 255, 0.08);
+    --text: #e6e8ee;
+    --text-soft: #9aa3b5;
+    --text-faint: #626b7d;
+    --blue: #5ac8fa;
+    --blue-deep: #3b82f6;
+    --orange: #ff7a2f;
+    --orange-soft: #ffb25e;
+    --grad-blue: linear-gradient(120deg, #8fdcff 0%, #5ac8fa 40%, #3b82f6 100%);
+    --grad-orange: linear-gradient(120deg, #ffc07a 0%, #ff8a3d 45%, #ff5f1f 100%);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  .grad-blue-text {
+    background: var(--grad-blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .grad-orange-text {
+    background: var(--grad-orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: 20%;
+    width: 800px;
+    height: 650px;
+    background: radial-gradient(ellipse at center, rgba(90, 200, 250, 0.13) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    right: 5%;
+    width: 700px;
+    height: 600px;
+    background: radial-gradient(ellipse at center, rgba(255, 122, 47, 0.09) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .hero > div { width: 100%; }
+  .hero .wrap { position: relative; z-index: 1; }
+  .hero-photo-frame {
+    max-width: 980px;
+    margin: 64px auto 0;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-photo-frame::before {
+    content: "";
+    position: absolute;
+    inset: 40px 60px -30px;
+    background: linear-gradient(120deg, rgba(90, 200, 250, 0.28), rgba(255, 122, 47, 0.18));
+    filter: blur(50px);
+    z-index: -1;
+  }
+  .hero-photo {
+    display: block;
+    width: 100%;
+    border-radius: 26px;
+    padding: 3px;
+    background: linear-gradient(135deg, rgba(90, 200, 250, 0.7), rgba(59, 130, 246, 0.35) 50%, rgba(255, 122, 47, 0.55));
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+  }
+  .hero-photo img {
+    display: block;
+    width: 100%;
+    border-radius: 23px;
+  }
+  .kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 12.5px;
+    font-weight: 650;
+    color: var(--blue);
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-size: clamp(50px, 9vw, 84px);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    font-weight: 720;
+  }
+  .role {
+    font-size: clamp(20px, 3.4vw, 26px);
+    color: var(--text-soft);
+    margin-top: 24px;
+    font-weight: 450;
+    line-height: 1.4;
+  }
+  .meta { margin-top: 20px; color: var(--text-faint); font-size: 15px; }
+  .meta span + span::before { content: "·"; margin: 0 10px; }
+  .cta { margin-top: 40px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 980px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary {
+    background: var(--grad-blue);
+    color: #041019;
+    box-shadow: 0 6px 28px rgba(90, 200, 250, 0.32);
+  }
+  .btn-primary:hover { box-shadow: 0 8px 36px rgba(90, 200, 250, 0.46); }
+  .btn-secondary {
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.03);
+  }
+  .btn-secondary:hover { background: rgba(255, 255, 255, 0.07); }
+
+  /* Sections */
+  section { padding: 110px 0; }
+  section.lift { background: var(--bg-lift); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  h2 {
+    font-size: clamp(32px, 5.5vw, 46px);
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.12;
+    margin-bottom: 26px;
+  }
+  .lede {
+    font-size: clamp(19px, 2.8vw, 23px);
+    color: var(--text-soft);
+    text-align: center;
+    line-height: 1.55;
+    font-weight: 420;
+  }
+  .body-copy {
+    margin-top: 22px;
+    color: var(--text-soft);
+    text-align: center;
+    font-size: 17.5px;
+  }
+
+  /* Stats — stacked, vertical rhythm */
+  .stat { text-align: center; padding: 46px 0; }
+  .stat + .stat { border-top: 1px solid var(--line); }
+  .stat b {
+    display: block;
+    font-size: clamp(54px, 10vw, 84px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    font-weight: 720;
+    white-space: nowrap;
+  }
+  .stat span {
+    display: block;
+    margin: 14px auto 0;
+    max-width: 420px;
+    font-size: 16.5px;
+    color: var(--text-soft);
+    line-height: 1.5;
+  }
+
+  /* Chips */
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 40px; }
+  .chip {
+    border: 1px solid rgba(90, 200, 250, 0.22);
+    background: rgba(90, 200, 250, 0.06);
+    color: #a8ddf7;
+    border-radius: 980px;
+    padding: 9px 18px;
+    font-size: 14.5px;
+    font-weight: 500;
+  }
+
+  /* Proof cards — stacked */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 40px 38px;
+    margin-top: 26px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 10%; right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(90, 200, 250, 0.45), rgba(255, 138, 61, 0.35), transparent);
+  }
+  .card .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 14px;
+  }
+  .card h3 { font-size: 22px; font-weight: 650; letter-spacing: -0.01em; margin-bottom: 12px; }
+  .card p { font-size: 16.5px; color: var(--text-soft); }
+
+  /* Timeline */
+  .timeline { margin-top: 50px; position: relative; padding-left: 34px; }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px; top: 8px; bottom: 8px;
+    width: 1px;
+    background: linear-gradient(180deg, rgba(90, 200, 250, 0.6), rgba(90, 200, 250, 0.08));
+  }
+  .job { position: relative; padding: 26px 0; }
+  .job::before {
+    content: "";
+    position: absolute;
+    left: -31px; top: 36px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--grad-blue);
+    box-shadow: 0 0 12px rgba(90, 200, 250, 0.6);
+  }
+  .job + .job { border-top: 1px solid var(--line); }
+  .job .when { color: var(--blue); font-size: 13.5px; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; }
+  .job h3 { font-size: 20px; font-weight: 650; margin-top: 6px; letter-spacing: -0.01em; }
+  .job .org { color: var(--text-faint); font-size: 15px; margin-top: 3px; }
+  .job p { font-size: 16px; color: var(--text-soft); margin-top: 10px; }
+
+  /* Extras */
+  .extras { margin-top: 44px; }
+  .extras h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--blue);
+    text-align: center;
+    margin: 40px 0 18px;
+    font-weight: 750;
+  }
+  .extras h3:first-child { margin-top: 0; }
+  .extras ul { list-style: none; text-align: center; }
+  .extras li { padding: 8px 0; color: var(--text-soft); font-size: 16px; }
+
+  /* Footer */
+  footer {
+    padding: 130px 0 110px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  footer::before {
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    left: 30%;
+    width: 800px;
+    height: 600px;
+    background: radial-gradient(ellipse at center, rgba(90, 200, 250, 0.10) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  footer::after {
+    content: "";
+    position: absolute;
+    bottom: -35%;
+    right: 10%;
+    width: 600px;
+    height: 500px;
+    background: radial-gradient(ellipse at center, rgba(255, 122, 47, 0.08) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  footer .wrap { position: relative; z-index: 1; }
+  footer p { color: var(--text-soft); max-width: 480px; margin: 0 auto 40px; font-size: 18px; }
+  .foot-note { margin-top: 56px; font-size: 13.5px; color: var(--text-faint); }
+
+  @media (max-width: 640px) {
+    section { padding: 76px 0; }
+    .hero { min-height: auto; padding: 70px 0 30px; }
+    .hero-photo-frame { margin-top: 44px; padding: 0 16px; }
+    .hero-photo, .hero-photo img { border-radius: 18px; }
+    .card { padding: 30px 24px; }
+    .stat { padding: 36px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div>
+  <div class="wrap">
+    <div class="kicker">Munich, Germany · Immediately available</div>
+    <h1>Shaun <span class="grad-blue-text">Thornton</span></h1>
+    <p class="role">Enterprise Programme Delivery &amp;<br>Business Operations Leader</p>
+    <div class="meta">
+      <span>Governance</span><span>Operating Models</span><span>Execution</span><span>Transformation</span>
+    </div>
+    <div class="cta">
+      <a class="btn btn-primary" href="mailto:shaun_thornton@icloud.com">Email me</a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/shaun-thornton-27851020/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="hero-photo-frame">
+    <div class="hero-photo"><img src="photo.jpg" alt="Portrait of Shaun Thornton"></div>
+  </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Making complex organisations <span class="grad-blue-text">easier to run.</span></h2>
+    <p class="lede">I spent 20+ years working with McKinsey &amp; Company - externally from 2000, in-house from 2010 - not as a consultant, but on the internal operations side: programme delivery, governance and executive enablement, working directly with Partners, Senior Partners and global leadership.</p>
+    <p class="body-copy">My work sits at the point where strategy has been agreed and someone has to make it actually happen: designing operating models, building governance and reporting that leaders trust, running leadership operating rhythms, and delivering complex cross-functional programmes at global scale.</p>
+  </div>
+</section>
+
+<section class="lift">
+  <div class="wrap">
+    <h2>The scale of <span class="grad-orange-text">the work.</span></h2>
+    <div class="stat"><b class="grad-orange-text">20+</b><span>years working with McKinsey &amp; Company - 16 of them in-house (2010-2026)</span></div>
+    <div class="stat"><b class="grad-orange-text">2,500+</b><span>participants a year on the global leadership programme my team delivered</span></div>
+    <div class="stat"><b class="grad-orange-text">30,000+</b><span>colleagues reached by the firm's global Cyber Awareness Programme, which I managed</span></div>
+    <div class="stat"><b class="grad-orange-text">800 &rarr; 1,100</b><span>growth in annual participants in one year, on broadly the same resources</span></div>
+    <div class="stat"><b class="grad-orange-text">25</b><span>people in the largest team I've coordinated, across internal staff and external partners</span></div>
+    <div class="stat"><b class="grad-orange-text">150</b><span>participants at the leadership forums I organised across Europe and EEMA</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What <span class="grad-blue-text">I do.</span></h2>
+    <div class="chips">
+      <span class="chip">Programme &amp; Portfolio Management</span>
+      <span class="chip">Business Operations &amp; Governance</span>
+      <span class="chip">Operating Model Design</span>
+      <span class="chip">Executive Decision Support</span>
+      <span class="chip">Leadership Operating Rhythms</span>
+      <span class="chip">PMO &amp; Delivery Excellence</span>
+      <span class="chip">Capacity &amp; Resource Planning</span>
+      <span class="chip">Change Management &amp; Transformation</span>
+      <span class="chip">Executive Reporting</span>
+      <span class="chip">Stakeholder Management</span>
+      <span class="chip">Process Improvement</span>
+      <span class="chip">AI-enabled Workflows</span>
+    </div>
+  </div>
+</section>
+
+<section class="lift">
+  <div class="wrap">
+    <h2>Proof, <span class="grad-orange-text">not promises.</span></h2>
+    <div class="card">
+      <span class="tag grad-orange-text">Operating at scale</span>
+      <h3>Flagship global leadership programme</h3>
+      <p>Operational lead for McKinsey's flagship global leadership programme - 2,500+ participants a year, a core team of 10 plus up to 15 external partners, full vendor authority. Built an operating model so repeatable the role was split into three positions after I moved on.</p>
+    </div>
+    <div class="card">
+      <span class="tag grad-blue-text">Systems &amp; governance</span>
+      <h3>Salesforce-based delivery governance</h3>
+      <p>Co-designed and implemented a Salesforce-based pipeline and delivery tracking system for a 50-person specialist pool - pipeline stages, dashboards, reporting and operating processes - then embedded it into the leadership operating rhythm so decisions ran on real data.</p>
+    </div>
+    <div class="card">
+      <span class="tag grad-orange-text">Enterprise change</span>
+      <h3>Global cyber awareness at firm scale</h3>
+      <p>Owned and evolved McKinsey's global Cyber Awareness Programme, reaching 30,000+ colleagues worldwide, and served as Product Owner for a mandatory global data-risk digital training - requirements, design decisions, stakeholder alignment and worldwide launch.</p>
+    </div>
+    <div class="card">
+      <span class="tag grad-blue-text">Executive enablement</span>
+      <h3>Leadership governance across two regions</h3>
+      <p>Ran governance and operating rhythms for practice leadership across Europe and EEMA - 150-person forums, budgets, briefing materials, decision support and follow-through. Created a monthly update format that was adopted globally as a governance standard.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Career.</h2>
+    <div class="timeline">
+      <div class="job">
+        <div class="when">2023 - 2026</div>
+        <h3>Client Activation Manager, POP EMEA</h3>
+        <div class="org">McKinsey &amp; Company · Munich</div>
+        <p>Partnered with Partners, Senior Partners and Co-Global Leadership on governance, operating rhythms, budgets and strategic execution across Europe and EEMA.</p>
+      </div>
+      <div class="job">
+        <div class="when">2021 - 2023</div>
+        <h3>Manager of Programme Delivery, McKinsey Academy</h3>
+        <div class="org">McKinsey &amp; Company · Munich</div>
+        <p>Led resource planning and delivery governance across Data &amp; Analytics and Operations portfolios - capacity management for a ~50-person specialist delivery pool.</p>
+      </div>
+      <div class="job">
+        <div class="when">2018 - 2021</div>
+        <h3>Cyber Risk Manager</h3>
+        <div class="org">McKinsey &amp; Company · Munich</div>
+        <p>Strengthened programme delivery, governance and adoption at scale across the firm's cyber risk portfolio; led a multidisciplinary team of 4-6.</p>
+      </div>
+      <div class="job">
+        <div class="when">2014 - 2018</div>
+        <h3>Senior Specialist, Global Leadership Programme</h3>
+        <div class="org">McKinsey &amp; Company · Munich</div>
+        <p>End-to-end operational lead for the firm's flagship leadership programme serving 2,500+ participants annually on behalf of Firm Leadership and Senior Partners.</p>
+      </div>
+      <div class="job">
+        <div class="when">2010 - 2013</div>
+        <h3>Facilities Manager &amp; Space Planner</h3>
+        <div class="org">McKinsey &amp; Company · London</div>
+        <p>Managed UK office space strategy and workplace operations through a period of business growth, with direct line management of a team of 6.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lift">
+  <div class="wrap">
+    <h2>Credentials <span class="grad-blue-text">&amp; languages.</span></h2>
+    <div class="extras">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Six Sigma Green Belt - Lean Process Methodologies</li>
+        <li>SANS MGT433 - Security Awareness · SANS SEC401 - Security Essentials</li>
+        <li>McKinsey Endeavor Leadership Programme</li>
+      </ul>
+      <h3>Languages</h3>
+      <ul>
+        <li>English - native · German - B1 · Afrikaans - conversational</li>
+      </ul>
+      <h3>Tools</h3>
+      <ul>
+        <li>Salesforce · Smartsheet · Jira · Confluence · Notion · Microsoft 365 · AI-enabled workflow and reporting tools</li>
+      </ul>
+      <h3>Profile</h3>
+      <ul>
+        <li>South African &amp; British national · German permanent resident</li>
+        <li>Based in the Munich metro area · immediately available</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>Let's <span class="grad-blue-text">talk.</span></h2>
+    <p>If you need someone to bring structure to ambiguity, tighten execution, and make a complex organisation easier to run - I'd like to hear from you.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="mailto:shaun_thornton@icloud.com">shaun_thornton@icloud.com</a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/shaun-thornton-27851020/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+    <div class="foot-note">Shaun Thornton · Munich, Germany</div>
+  </div>
+</footer>
+
+</body>
+</html>
